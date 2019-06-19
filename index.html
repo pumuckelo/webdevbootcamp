@@ -4,7 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+    />
+    <title>WebDev Bootcamp</title>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-item">
+          <img src="pics/logo.png" />
+        </a>
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarbasic"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navbarbasic">
+        <div class="navbar-start">
+          <a href="" class="navbar-item">Startseite</a>
+          <a href="table.html" class="navbar-item">Tabelle</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a href="" class="navbar-link">Mehr</a>
+            <div class="navbar-dropdown">
+              <a href="" class="navbar-item">Über mich</a>
+              <a href="" class="navbar-item">Mein Team</a>
+              <hr class="navbar-divider" />
+              <a href="" class="navbar-item">Jetzt Nerven!</a>
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-primary">
+                    <strong>Sign up</strong>
+                  </a>
+                  <a class="button is-light">
+                    Log in
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
   </head>
-  <body></body>
+  <body>
+    <!-- Register -->
+    <section class="section">
+    <div class="container is-fluid">
+      <form action="" method="POST">
+        <div class="field">
+          <label class="label">Benutzername</label>
+          <div class="control">
+            <input class="input is-rounded" type="text" placeholder="Dein Benutzername" />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">E-Mail</label>
+          <div class="control">
+            <input class="input is-rounded" type="email" placeholder="Deine E-Mail Adresse" />
+          </div>
+        <div class="field">
+          <label class="label">Passwort</label>
+          <div class="control">
+            <input class="input is-rounded" type="password" placeholder="Dein Passwort" />
+          </div>
+        </div>
+        <button class="button is-primary is-rounded">Registrieren</button>
+      </form>
+    </div>
+  </section>
+  </body>
 </html>
