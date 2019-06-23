@@ -1,0 +1,24 @@
+#makeyellow {
+  color: yellow;
+}
+
+#makepurple {
+  color: blueviolet;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+h1 + ul {
+  border: 4px solid violet;
+}
+
+li input[type="checkbox"]:checked {
+  text-decoration: line-through;
+  color: red;
+}
+
+li + input:checked {
+  text-decoration: line-through;
+}

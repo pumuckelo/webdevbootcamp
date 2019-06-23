@@ -4,21 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Einloggen</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <h1>Einloggen</h1>
     <form action="" method="GET">
-      <label for="username"></label>
-      <input
-        id="username"
-        type="text"
-        placeholder="Benutzername"
-        name="username"
-        id=""
-      />
-      <input type="password" placeholder="Passwort" name="password" id="" />
-      <input type="submit" />
+      <label for="email">E-Mail Adresse:</label>
+      <input required id="email" type="email" placeholder="E-Mail" />
+      <label for="username">Benutzername:</label>
+      <input required id="username" type="text" placeholder="Benutzername" />
+      <label for="password">Passwort:</label>
+      <input required id="password" type="password" placeholder="Passwort" />
+      <label for="male">Männlich:</label>
+      <input id="male" value="male" name="gender" type="radio" />
+      <label for="female">Weiblich:</label>
+      <input id="female" value="female" name="gender" type="radio" />
+      <label for="boobselect">Wähle deine Größe</label>
+      <select name="boobselect" id="boobselect">
+        <option value="10">10cm</option>
+        <option value="11">11cm</option>
+        <option value="12">12cm</option>
+        <option value="13">13cm</option>
+        <option value="14">14cm</option>
+        <option value="15">15cm</option>
+        <option value="16">16cm</option>
+        <option value="17">17cm</option>
+        <option value="18">18cm</option>
+      </select>
+      <input type="submit" value="Einloggen" />
     </form>
   </body>
 </html>

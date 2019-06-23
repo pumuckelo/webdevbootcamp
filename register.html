@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registrieren</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="font-family: 'Raleway', sans-serif;">
+    <h1>Registrieren</h1>
+    <form action="">
+      <label for="vorname">Vorname:</label>
+      <input required id="vorname" placeholder="Vorname" type="text" />
+      <label for="nachname">Nachname:</label>
+      <input required id="nachname" placeholder="Nachname" type="text" />
+      <div>
+        <label for="männlich">Männlich</label>
+        <input type="radio" value="Männlich" id="männlich" name="geschlecht" />
+        <label for="weiblich">Weiblich</label>
+        <input type="radio" value="Weiblich" id="weiblich" name="geschlecht" />
+        <label for="andere">Andere</label>
+        <input type="radio" value="Andere" name="geschlecht" id="andere" />
+      </div>
+      <div>
+        <label for="email">E-Mail:</label>
+        <input
+          required
+          type="email"
+          name="email"
+          id="email"
+          placeholder="E-Mail"
+        />
+        <label for="password">Passwort:</label>
+        <input
+          title="Passwort muss mindestens 8 Zeichen lang sein"
+          pattern=".{8,}"
+          required
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Passwort"
+        />
+      </div>
+      <div>
+        <label for="geburtstag">Geburtstag:</label>
+        <select name="tag" id="geburtstag">
+          <option value="Tag">1</option>
+          <option value="Tag">2</option>
+          <option value="Tag">3</option>
+          <option value="Tag">4</option>
+        </select>
+        <select name="monat" id="geburtstag">
+          <option value="Monat">Januar</option>
+          <option value="Monat">Februar</option>
+          <option value="Monat">März</option>
+        </select>
+        <select name="jahr" id="geburtstag">
+          <option value="Jahr">1999</option>
+          <option value="Jahr">1998</option>
+          <option value="Jahr">1997</option>
+          <option value="Jahr">1996</option>
+          <option value="Jahr">1995</option>
+        </select>
+      </div>
+      <label for="agreed">Ich stimme dem Knebelvertrag zu</label>
+      <input required id="agreed" type="checkbox" value="agreed" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
