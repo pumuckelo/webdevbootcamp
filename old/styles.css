@@ -1,0 +1,39 @@
+/* font family */
+p {
+  font-family: Mali;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: Georgia;
+}
+
+/* font sizde */
+h1 {
+  font-size: ;
+  font-family: Pacifico;
+}
+
+span {
+  font-size: 2em;
+}
+
+/* font weight */
+p {
+  font-weight: 400;
+}
+
+/* text align */
+p {
+  text-align: center;
+}
+
+/* text decoration */
+p {
+  text-decoration: underline;
+}
+
+/* h1 {
+  text-decoration: line-through;
+} */

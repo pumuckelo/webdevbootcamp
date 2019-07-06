@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+}
+
+table {
+  width: 200px;
+  margin: 10px auto;
+}
+td {
+  margin: 40px auto;
+  padding: 100px;
+}
+.leftright {
+  border-left: 2px black solid;
+  border-right: 2px black solid;
+
+  margin: 400px;
+}
+
+.bottom {
+  border-bottom: 2px black solid;
+}
