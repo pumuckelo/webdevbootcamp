@@ -11,18 +11,36 @@ var maxscoreAnzeige = document.getElementById("maxscoreAnzeige");
 
 var buttonSpieler1 = document.querySelector("#player1");
 var buttonSpieler2 = document.querySelector("#player2");
+var gameOver = false;
+var reset = document.getElementById("reset");
 
 buttonSpieler1.addEventListener("click", function() {
-  score1++;
+  if (!gameOver) {
+    score1++;
+
+    if (score1 == maxscore) {
+      score1Anzeige.classList.toggle("win");
+      gameOver = true;
+    }
+  }
   score1Anzeige.textContent = score1;
 });
 
 buttonSpieler2.addEventListener("click", function() {
-  score2++;
+  if (!gameOver) {
+    score2++;
+
+    if (score2 == maxscore) {
+      gameOver = true;
+      score2Anzeige.classList.toggle("win");
+    }
+  }
   score2Anzeige.textContent = score2;
 });
 
-maxscoreinput.addEventListener("click", function() {
-  maxscore = maxscoreinput.value;
-  maxscoreAnzeige.textContent = maxscore;
+maxscoreinput.addEventListener("change", function() {
+  if (!gameOver) {
+    maxscore = maxscoreinput.value;
+    maxscoreAnzeige.textContent = maxscore;
+  }
 });
