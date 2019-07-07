@@ -38,9 +38,23 @@ buttonSpieler2.addEventListener("click", function() {
   score2Anzeige.textContent = score2;
 });
 
+reset.addEventListener("click", function() {
+  gameOver = false;
+  if (score1 == maxscore) {
+    score1Anzeige.classList.toggle("win");
+  }
+  if (score2 == maxscore) {
+    score2Anzeige.classList.toggle("win");
+  }
+  score1 = 0;
+  score2 = 0;
+  score1Anzeige.textContent = score1;
+  score2Anzeige.textContent = score2;
+});
+
 maxscoreinput.addEventListener("change", function() {
   if (!gameOver) {
-    maxscore = maxscoreinput.value;
+    maxscore = this.value;
     maxscoreAnzeige.textContent = maxscore;
   }
 });

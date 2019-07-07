@@ -1,0 +1,23 @@
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #232323;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  background-image: linear-gradient(blueviolet, aqua);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.rechteck {
+  color: blueviolet;
+  width: 30%;
+  height: 45%;
+  margin: 1.6%;
+  float: left;
+  padding-bottom: 30%;
+}
